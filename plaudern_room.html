@@ -1,8 +1,42 @@
 <html>
-    <head>
-        <title>PLaudern room beta</title>
-    </head>
-    <body>
-        <h1>empty</h1>
-    </body>
+
+<head>
+    <title>Plaudern Chat: Create Or Join!</title>
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="plaudern_room.js"></script>
+</head>
+
+<body>
+    <button class="btn btn-warning" id="logout_btn" onclick="logout()">⬅ LOG OUT</button>
+    <h3 id="user_name" class="color_white"></h3>
+    <center>
+        <div class="container_2">
+            <h1 id="primaryTitle">Room Menu</h1>
+            <br>
+            <h3 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Room Creation</h3>
+            <h4 id="roomNameLbl" style="margin-right:300px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Room Name</h4>
+            <input type="text" id="roomNameInput" class="form-control" placeholder="Enter Room Name. Try '#WorkChat'" >
+            <br>
+            <button id="createRoomBtn" onclick="addRoom()" class="btn">Create Room</button>
+            <br>
+            <br>
+            <p id="stepsLbl">Important</p>
+            <p id="step">Make sure to put a '#' before entering<br>
+            the room name. For example:-<br>
+            #Roomname</p>
+        </div>
+        <div class="container_3">
+            <h1 id="primaryTitle">Room Selection</h1>
+            <br>
+            <h3 id="roomName"></h3>
+        </div>
+    </center>
+</body>
+
 </html>
