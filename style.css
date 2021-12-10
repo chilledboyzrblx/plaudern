@@ -86,3 +86,9 @@ body{
     height:40px;
     font-size:20px;
 }
+.message_input_div{
+    background-color:aliceblue;
+    padding-top:10px;
+    padding-left:10px;
+    padding-right:10px;
+}

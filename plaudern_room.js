@@ -1,4 +1,4 @@
-const firebaseConfig = {
+var firebaseConfig = {
     apiKey: "AIzaSyC7Ekxi6ZL9hcKzAfadb1YBE5qzbpsiMHI",
     authDomain: "plaudern-database.firebaseapp.com",
     databaseURL: "https://plaudern-database-default-rtdb.firebaseio.com",
@@ -9,7 +9,7 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+var app = initializeApp(firebaseConfig);
 
 function logout() {
     window.location = "index.html";
